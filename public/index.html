@@ -1,0 +1,49 @@
+<!--
+  Name: Terrance Lee
+  Date: 04-21-25
+  Description: Jokebook – Web interface to view and add jokes (hw6 - CSC 372)
+  - index.html -        
+    The main HTML file for the Jokebook web app.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jokebook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>😂 Jokebook</h1>
+
+  <section>
+    <h2>Random Joke</h2>
+    <div id="random-joke"></div>
+  </section>
+
+  <section>
+    <h2>Categories</h2>
+    <ul id="category-list"></ul>
+  </section>
+
+  <section>
+    <h2>Search by Category</h2>
+    <input type="text" id="search-input" placeholder="Enter category">
+    <button id="search-btn">Search</button>
+    <div id="search-results"></div>
+  </section>
+
+  <section>
+    <h2>Add a Joke</h2>
+    <form id="joke-form">
+      <input type="text" name="category" placeholder="Category" required />
+      <input type="text" name="setup" placeholder="Setup" required />
+      <input type="text" name="delivery" placeholder="Delivery" required />
+      <button type="submit">Add Joke</button>
+    </form>
+    <div id="new-joke-list"></div>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
